@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zakir Hussain | Data Analyst Portfolio</title>
+  <meta name="description" content="Zakir Hussain — Data Analyst. Excel • SQL • Python • Power BI • Azure • Snowflake. Dashboards, analytics, and data storytelling." />
+  <link rel="canonical" href="https://codeverse-team.github.io/Zakir-Data-Portfolio/" />
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="./assets/images/avatar-1.png" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Inline styles for animations -->
+  <style>
+    /* Typing caret */
+    .typing::after { content: "|"; margin-left: 6px; animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    /* Reveal animation helpers */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    /* Floating avatar */
+    .avatar-box img { animation: floatY 6s ease-in-out infinite; }
+    @keyframes floatY { 0% { transform: translateY(0);} 50% { transform: translateY(-6px);} 100% { transform: translateY(0);} }
+    /* Skill bar fill initial */
+    .skill-progress-fill { width: 0; transition: width 1.1s ease-out; }
+    /* Project hover lift */
+    .project-img { transition: transform .28s ease, box-shadow .28s ease; }
+    .project-img:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(0,0,0,0.12); }
+    /* Smooth scroll behavior */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Zakir Hussain" width="84" />
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Zakir Hussain">Zakir Hussain</h1>
+          <p class="title typing" id="typed-title">Data Analyst</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:zakirhussain132006@gmail.com" class="contact-link">zakirhussain132006@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+918828770829" class="contact-link">+91 8828770829</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Mumbai, Maharashtra, India</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item"><a href="https://www.linkedin.com/in/zakirhussain13/" target="_blank" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li class="social-item"><a href="https://codeverse-team.github.io/Zakir-Data-Portfolio/" target="_blank" class="social-link"><ion-icon name="globe-outline"></ion-icon></a></li>
+          <li class="social-item"><a href="https://github.com/CodeVerse-team" target="_blank" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+      </div>
+    </aside>
+    <!-- MAIN -->
+    <div class="main-content">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link data-target="about">About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="resume">Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="portfolio">Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="blog">Blog</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="contact">Contact</button></li>
+        </ul>
+      </nav>
+      <!-- ABOUT -->
+      <article id="about" class="about active" data-page="about">
+        <header><h2 class="h2 article-title">About me</h2></header>
+        <section class="about-text reveal">
+          <p>
+            Data Analyst with hands-on experience in <strong>Excel, SQL, Python, and Power BI,</strong> combined with strong foundations in data cleaning, exploratory analysis, and dashboard development. 
+            Proven ability to transform raw datasets into actionable insights through real-world projects and a consistent learning track via <strong>#100DaysOfAnalytics.</strong>
+            Passionate about solving business problems using data-driven approaches and modern analytics tools including <strong>Azure, Snowflake, and API Integration.</strong>
+          </p>
+          <p>
+            Recent projects: a <strong>Data Jobs Dashboard (Power BI)</strong>, <strong>Call Center Performance Dashboard (Excel)</strong>, <strong>SQL Music Store analysis</strong>, 
+            <strong>Customer Segmentation (K-Means)</strong>. I enjoy building production-ready dashboards and improving them based on user feedback.
+          </p>
+          <a href="./Zakir Hussain-Data-Analyst-03-2026.pdf" target="_blank" class="resume-btn"><ion-icon name="arrow-down-outline"></ion-icon> Download CV</a>
+        </section>
+        <section class="service reveal">
+          <h3 class="h3 service-title">What I'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box"><img src="./assets/images/icon-dev.svg" alt="Data Analysis icon" width="40" /></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analysis</h4>
+                <p class="service-item-text">Data cleaning, EDA, KPI design, statistical analysis and A/B testing to drive business decisions.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><img src="./assets/images/icon-design.svg" alt="Dashboards icon" width="40" /></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Interactive Dashboards</h4>
+                <p class="service-item-text">Power BI and Excel dashboards with dynamic KPIs, filters, and visual storytelling for stakeholders.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><img src="./assets/images/database.png" alt="SQL icon" width="40" /></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">SQL & Querying</h4>
+                <p class="service-item-text">Advanced SQL queries with JOINs, GROUP BY, aggregations and subqueries for data extraction.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><img src="./assets/images/icon-graphic.png" alt="Automation icon" width="40" /></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Python & Automation</h4>
+                <p class="service-item-text">Python (Pandas, NumPy) scripts for data pipelines, cleaning, feature engineering and workflow automation.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <!-- RESUME -->
+      <article id="resume" class="resume" data-page="resume">
+        <header><h2 class="h2 article-title">Resume</h2></header>
+        <!-- Experience -->
+        <section class="timeline reveal">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Analyst Intern — Rasheed Foundation</h4>
+              <span>Dec 2025 — March 2026</span>
+              <p class="timeline-text">Performed end-to-end data analysis including cleaning, transformation, and visualization. Built interactive dashboards (Sales, Finance, HR) using Power BI and Tableau. Executed advanced SQL queries and applied statistical concepts including hypothesis testing and A/B testing. Enhanced automation workflows reducing manual effort.</p>
+            </li>
+          </ol>
+        </section>
+        <!-- Education -->
+        <section class="timeline reveal">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">B.Sc. in Computer Science — SIES (NERUL) College of Science, Arts, and Commerce (Autonomous)</h4>
+              <span>Apr 2023 — 2026</span>
+              <p class="timeline-text">CGPA: 7.297/10 — Navi Mumbai, India</p>
+            </li>
+          </ol>
+        </section>
+        <!-- Projects -->
+        <section class="timeline reveal">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="code-slash-outline"></ion-icon></div>
+            <h3 class="h3">Projects</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Jobs Dashboard (Power BI)</h4>
+              <span>2025</span>
+              <p class="timeline-text">Interactive dashboard analyzing job market trends, roles, and salary insights in the data domain with dynamic KPIs, filters, and visual storytelling elements.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Call Center Performance Dashboard (Excel)</h4>
+              <span>2025</span>
+              <p class="timeline-text">Advanced Excel dashboard using pivot tables, Power Query, and charts to track agent performance and call efficiency with team comparisons.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">SQL Music Store Data Analysis</h4>
+              <span>2024</span>
+              <p class="timeline-text">Analyzed relational database using complex SQL queries (JOINs, aggregations, subqueries) to uncover customer behavior, revenue trends, and artist performance.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Customer Segmentation (K-Means Clustering)</h4>
+              <span>2024</span>
+              <p class="timeline-text">Implemented K-Means clustering to segment customers for targeted marketing strategies with exploratory data analysis and feature engineering using Pandas.</p>
+            </li>
+          </ol>
+        </section>
+        <!-- Certifications -->
+        <section class="timeline reveal">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="school-outline"></ion-icon></div>
+            <h3 class="h3">Certifications</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Google Data Analytics Certificate — Coursera</h4>
+              <span>2024</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Master Microsoft Power BI — Anton Voroniuk</h4>
+              <span>2024</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Microsoft Excel 101 — Skillyfy Academy</h4>
+              <span>2024</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Complete Snowflake Bootcamp — Kunal Biswa</h4>
+              <span>2024</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Python for Data Science — IBM Cognitive Class</h4>
+              <span>2024</span>
+            </li>
+          </ol>
+        </section>
+        <!-- Skills -->
+        <section class="skill reveal">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">SQL</h5><data value="85">85%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" data-skill="85"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Python (Pandas, NumPy, Matplotlib, Seaborn)</h5><data value="80">80%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" data-skill="80"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Power BI</h5><data value="85">85%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" data-skill="85"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">MS Excel</h5><data value="90">90%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" data-skill="90"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Tableau (Basic)</h5><data value="60">60%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" data-skill="60"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Azure</h5><data value="65">65%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" data-skill="65"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Snowflake (Basic)</h5><data value="55">55%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" data-skill="55"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Data Cleaning & EDA</h5><data value="85">85%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" data-skill="85"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Statistical Analysis & A/B Testing</h5><data value="75">75%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" data-skill="75"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Generative AI Tools & Automation</h5><data value="70">70%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" data-skill="70"></div></div>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <!-- PORTFOLIO -->
+      <article id="portfolio" class="portfolio" data-page="portfolio">
+        <header><h2 class="h2 article-title">Portfolio of Projects</h2></header>
+        <section class="projects reveal">
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn data-cat="all">All</button></li>
+            <li class="filter-item"><button data-filter-btn data-cat="dashboards">Dashboards</button></li>
+            <li class="filter-item"><button data-filter-btn data-cat="sql">SQL</button></li>
+            <li class="filter-item"><button data-filter-btn data-cat="ml">ML</button></li>
+            <li class="filter-item"><button data-filter-btn data-cat="powerbi">Power BI</button></li>
+          </ul>
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>All</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item data-val="all">All</button></li>
+              <li class="select-item"><button data-select-item data-val="dashboards">Dashboards</button></li>
+              <li class="select-item"><button data-select-item data-val="sql">SQL</button></li>
+              <li class="select-item"><button data-select-item data-val="ml">ML</button></li>
+              <li class="select-item"><button data-select-item data-val="powerbi">Power BI</button></li>
+            </ul>
+          </div>
+          <ul class="project-list">
+            <!-- Data Jobs Dashboard -->
+            <li class="project-item active" data-filter-item data-category="powerbi" data-description="Interactive dashboard analyzing job market trends, roles, and salary insights in the data domain with dynamic KPIs, filters, and visual storytelling elements.">
+              <a href="https://codeverse-team.github.io/Zakir-Data-Portfolio/" target="_blank" class="project-link" data-modal-trigger>
+                <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-1.png" alt="Data Jobs Dashboard" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Data Jobs Dashboard (Power BI)</h3>
+                <p class="project-category">Power BI</p>
+              </a>
+            </li>
+            <!-- Call Center -->
+            <li class="project-item active" data-filter-item data-category="dashboards" data-description="Advanced Excel dashboard using pivot tables, Power Query, and charts to track agent performance and call efficiency with team comparisons.">
+              <a href="#" class="project-link" data-modal-trigger>
+                <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-2.png" alt="Call Center Dashboard" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Call Center Performance Dashboard (Excel)</h3>
+                <p class="project-category">Dashboards</p>
+              </a>
+            </li>
+            <!-- SQL Music -->
+            <li class="project-item active" data-filter-item data-category="sql" data-description="Analyzed relational database using complex SQL queries (JOINs, aggregations, subqueries) to uncover customer behavior, revenue trends, and artist performance.">
+              <a href="#" class="project-link" data-modal-trigger>
+                <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-6.png" alt="SQL Music Store" loading="lazy" />
+                </figure>
+                <h3 class="project-title">SQL Music Store Analysis</h3>
+                <p class="project-category">SQL</p>
+              </a>
+            </li>
+            <!-- Customer Segmentation -->
+            <li class="project-item active" data-filter-item data-category="ml" data-description="Implemented K-Means clustering to segment customers for targeted marketing strategies with exploratory data analysis and feature engineering using Pandas.">
+              <a href="#" class="project-link" data-modal-trigger>
+                <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-7.jpg" alt="Customer Segmentation" loading="lazy" />
+                </figure>
+                <h3 class="project-title">Customer Segmentation (K-Means)</h3>
+                <p class="project-category">ML / Python</p>
+              </a>
+            </li>
+          </ul>
+          <!-- Modal for project details -->
+          <div class="modal" id="project-modal">
+            <div class="modal-content">
+              <span class="modal-close">&times;</span>
+              <img class="modal-img" src="" alt="Project Image" />
+              <h3 class="modal-title"></h3>
+              <p class="modal-category"></p>
+              <p class="modal-description"></p>
+              <a class="modal-link" href="#" target="_blank">View Project</a>
+            </div>
+          </div>
+        </section>
+      </article>
+      <!-- BLOG -->
+      <article id="blog" class="blog" data-page="blog">
+        <header><h2 class="h2 article-title">#100DaysOfAnalytics Journey</h2></header>
+        <section class="blog-posts reveal">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="https://docs.google.com/spreadsheets/d/1a8LNjJb9kWqTY7AYJWssueQ2mJRUGYfEvV_lNNYrs_U/edit?usp=sharing" target="_blank">
+                <figure class="blog-banner-box"><img src="./assets/images/blog-1.jpg" alt="#100DaysOfAnalytics Portfolio" loading="lazy" /></figure>
+                <div class="blog-content">
+                  <div class="blog-meta"><p class="blog-category">Data Analytics</p><span class="dot"></span><time datetime="2024-01-01">2024</time></div>
+                  <h3 class="h3 blog-item-title">#100DaysOfAnalytics Portfolio</h3>
+                  <p class="blog-text">A comprehensive collection of daily analytics challenges covering Excel, SQL, Python, and Power BI with real-world datasets.</p>
+                </div>
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/in/zakirhussain13/" target="_blank">
+                <figure class="blog-banner-box"><img src="./assets/images/blog-2.jpg" alt="LinkedIn Learning Journey" loading="lazy" /></figure>
+                <div class="blog-content">
+                  <div class="blog-meta"><p class="blog-category">Professional Growth</p><span class="dot"></span><time datetime="2024-01-01">2024 - Present</time></div>
+                  <h3 class="h3 blog-item-title">Continuous Learning & Industry Insights</h3>
+                  <p class="blog-text">Sharing my journey learning Snowflake, Azure, Airflow and exploring Data Analyst, ETL Developer, and Data Engineer roles.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <!-- CONTACT -->
+      <article id="contact" class="contact" data-page="contact">
+        <header><h2 class="h2 article-title">Contact</h2></header>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303216.91325830284!2d72.71637740399126!3d19.082501999965313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1721622505808!5m2!1sen!2sin" width="100%" height="420" allowfullscreen="" loading="lazy"></iframe>
+          </figure>
+        </section>
+        <section class="contact-form reveal">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input />
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div> <!-- .main-content -->
+  </main>
+  <!-- Existing core app JS -->
+  <script src="./assets/js/app.js"></script>
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Inline JS: typing, reveal-on-scroll, skills, smooth nav, portfolio filter, modal -->
+  <script>
+    /* Typing effect */
+    (function() {
+      const el = document.getElementById('typed-title');
+      if (!el) return;
+      const phrases = ['Data Analyst', 'Excel • SQL • Python', 'Power BI • Azure • Snowflake'];
+      let p = 0, i = 0, deleting = false;
+      function tick() {
+        const full = phrases[p];
+        el.textContent = deleting ? full.slice(0, i--) : full.slice(0, i++);
+        if (!deleting && i === full.length + 1) { deleting = true; setTimeout(tick, 900); return; }
+        if (deleting && i < 0) { deleting = false; p = (p + 1) % phrases.length; }
+        setTimeout(tick, deleting ? 40 : 80);
+      }
+      tick();
+    })();
+    /* Reveal-on-scroll */
+    (function() {
+      const reveals = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+        });
+      }, { threshold: 0.16 });
+      reveals.forEach(r => io.observe(r));
+    })();
+    /* Skill bar fill */
+    (function() {
+      const fills = document.querySelectorAll('.skill-progress-fill');
+      const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach(en => {
+          if (en.isIntersecting) {
+            const el = en.target;
+            const value = el.getAttribute('data-skill') || el.style.width || '0';
+            el.style.width = (value) + '%';
+            obs.unobserve(el);
+          }
+        });
+      }, { threshold: 0.35 });
+      fills.forEach(f => io.observe(f));
+    })();
+    /* Smooth navigation */
+    (function() {
+      const navButtons = document.querySelectorAll('[data-nav-link]');
+      navButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          navButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const target = btn.getAttribute('data-target');
+          if (!target) return;
+          const section = document.getElementById(target);
+          if (!section) return;
+          const offset = 12;
+          const top = section.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        });
+      });
+    })();
+    /* Portfolio filter and modal */
+    (function() {
+      const filterBtns = document.querySelectorAll('[data-filter-btn]');
+      const projects = document.querySelectorAll('[data-filter-item]');
+      const selectBtn = document.querySelector('[data-select]');
+      const selectList = document.querySelector('.select-list');
+      const selectValue = document.querySelector('[data-select-value]');
+      const modal = document.querySelector('#project-modal');
+      const modalClose = document.querySelector('.modal-close');
+      const modalImg = document.querySelector('.modal-img');
+      const modalTitle = document.querySelector('.modal-title');
+      const modalCategory = document.querySelector('.modal-category');
+      const modalDescription = document.querySelector('.modal-description');
+      const modalLink = document.querySelector('.modal-link');
+      function filter(cat) {
+        projects.forEach(p => {
+          const cats = p.getAttribute('data-category') || '';
+          p.classList.toggle('active', cat === 'all' || cats.includes(cat));
+        });
+        filterBtns.forEach(b => b.classList.toggle('active', b.getAttribute('data-cat') === cat));
+        if (selectValue) selectValue.textContent = cat === 'all' ? 'All' : cat.charAt(0).toUpperCase() + cat.slice(1);
+      }
+      // Initialize with all projects visible
+      filter('all');
+      filterBtns.forEach(b => {
+        b.addEventListener('click', () => {
+          const c = b.getAttribute('data-cat') || 'all';
+          filter(c);
+        });
+      });
+      // Mobile dropdown
+      if (selectBtn && selectList) {
+        selectBtn.addEventListener('click', () => selectList.classList.toggle('active'));
+        document.querySelectorAll('[data-select-item]').forEach(it => {
+          it.addEventListener('click', () => {
+            const val = it.getAttribute('data-val') || 'all';
+            filter(val);
+            selectList.classList.remove('active');
+          });
+        });
+        document.addEventListener('click', e => {
+          if (!selectBtn.contains(e.target) && !selectList.contains(e.target)) {
+            selectList.classList.remove('active');
+          }
+        });
+      }
+      // Modal functionality
+      if (modal) {
+        document.querySelectorAll('[data-modal-trigger]').forEach(link => {
+          link.addEventListener('click', e => {
+            e.preventDefault();
+            const project = link.closest('[data-filter-item]');
+            modalImg.src = project.querySelector('img').src;
+            modalImg.alt = project.querySelector('img').alt;
+            modalTitle.textContent = project.querySelector('.project-title').textContent;
+            modalCategory.textContent = project.querySelector('.project-category').textContent;
+            modalDescription.textContent = project.getAttribute('data-description') || '';
+            modalLink.href = link.href;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          });
+        });
+        modalClose.addEventListener('click', () => {
+          modal.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+        modal.addEventListener('click', e => {
+          if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+        document.addEventListener('keydown', e => {
+          if (e.key === 'Escape' && modal.classList.contains('active')) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+    })();
+    /* Contact form */
+    (function() {
+      const form = document.querySelector('[data-form]');
+      if (!form) return;
+      const btn = form.querySelector('[data-form-btn]');
+      form.addEventListener('input', () => {
+        const allFilled = [...form.querySelectorAll('[data-form-input]')].every(inp => inp.value.trim() !== '');
+        if (btn) btn.disabled = !allFilled;
+      });
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        alert('Thanks — message simulated. Replace this with your form backend / email integration.');
+        form.reset();
+        if (btn) btn.disabled = true;
+      });
+    })();
+  </script>
+</body>
+</html>
